@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anjali Soni Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      /* Custom animations */
+      @keyframes jiggle {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-3px);
+        }
+        50% {
+          transform: translateX(3px);
+        }
+        75% {
+          transform: translateX(-3px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#E3CEC7] text-gray-800">
+    <!-- Navigation Bar -->
+    <nav
+      class="bg-[#dad7d5] flex justify-between items-center p-4 sticky top-0 shadow-md"
+    >
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:text-[#8AA494]">Home</a></li>
+        <li><a href="#about" class="hover:text-[#8AA494]">About Me</a></li>
+        <li><a href="#services" class="hover:text-[#8AA494]">Services</a></li>
+        <li><a href="#projects" class="hover:text-[#8AA494]">Projects</a></li>
+        <li><a href="#skills" class="hover:text-[#8AA494]">Skills</a></li>
+        <li>
+          <a href="#certifications" class="hover:text-[#8AA494]"
+            >Certifications</a
+          >
+        </li>
+        <li><a href="#contact" class="hover:text-[#8AA494]">Contact Me</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <span>Anjali Soni</span>
+        <button id="theme-toggle" class="bg-[#B8C5B9] p-2 rounded">
+          Toggle Theme
+        </button>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <section
+      id="home"
+      class="h-screen flex items-center justify-between bg-[#B8C5B9] text-[darkgray]"
+    >
+      <div class="flex flex-col gap-4 p-8 text-black">
+        <h1 class="text-9xl font-bold italic animate-fade-in-1">
+          Welcome to My Portfolio
+        </h1>
+        <h1 class="text-xl animate-fade-in-2 hover:text-white">
+          Contact Information
+        </h1>
+        <h2 class="animate-fade-in-3 hover:text-white">
+          Email: anjalisoni@gmail.com
+        </h2>
+        <h2 class="animate-fade-in-4 hover:text-white">Number: **********</h2>
+        <h2 class="animate-fade-in-5 hover:text-white">
+          <a
+            href="https://www.instagram.com/chulbulsoni91/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1"
+          >
+            Instagram: chulbulsoni91
+          </a>
+        </h2>
+        <h2 class="animate-fade-in-6 hover:text-white">
+          <a
+            href="https://www.instagram.com/chulbulsoni91/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1"
+            >Threads: chulbulsoni91
+          </a>
+        </h2>
+      </div>
+      <div class="flex-shrink-0 p-8">
+        <img
+          src="Image/Profile pic.jpg"
+          alt="Profile picture"
+          class="w-72 h-72 rounded-full shadow-lg"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="h-screen my-5 bg-[#8AA494] font-bold">
+      <h1 class="text-9xl italic pb-8">About Me</h1>
+      <p >Btech 2nd year Student Form Computer science</p>
+      <p>Age: 17</p>
+      <p>Family: An elder sister and mother</p>
+      <p>Goal: To be An successful full Stack Engineer</p>
+      <p  class="font-light">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quod
+        perferendis veniam aliquam enim dignissimos consequatur corporis numquam
+        excepturi voluptatibus eius cum porro. Dolorem obcaecati aut dolore
+        deleniti sequi unde dicta odit adipisci, voluptatum quisquam debitis
+        ipsa veniam commodi facilis omnis id. Voluptate necessitatibus
+        voluptates molestias maxime! Velit voluptates iste quo saepe soluta,
+        voluptas aliquid eius magnam id temporibus atque nobis nihil obcaecati
+        vitae commodi esse. Quo hic sunt consequuntur tempore laboriosam soluta
+        id dolorem eius veniam beatae praesentium ab cumque laborum eum aliquam,
+        placeat assumenda eos recusandae quae voluptatum? Reiciendis praesentium
+        magni accusantium voluptatum, ducimus quia nostrum dolor soluta, sint
+        molestiae dolores. Molestiae deserunt perferendis similique praesentium
+        nam suscipit distinctio, itaque veniam, earum eum laboriosam illum
+        perspiciatis! Reiciendis, consequatur tenetur provident dolorem
+        similique illum temporibus minima eius illo laudantium odio libero cum
+        velit quaerat sint consequuntur ad? Dolorem libero, cupiditate
+        repudiandae nulla a cumque voluptatem, voluptate autem laborum tempore
+        magni. Labore, at, mollitia dolorum voluptate ducimus temporibus
+        laboriosam pariatur rem animi debitis culpa veniam fugiat est. Qui ipsum
+        voluptatem, necessitatibus veniam tempore nostrum dolore minima aut
+        sapiente, expedita repudiandae a omnis molestias? Quidem eveniet
+        accusamus commodi non. In itaque modi incidunt eum iste dicta provident
+        illo tenetur, rerum unde iure molestias ipsa aliquam dignissimos
+        corporis cupiditate! Repudiandae veritatis, corrupti omnis sed dolorem
+        dolorum eius in inventore possimus est harum quas saepe iusto officiis
+        placeat, et corporis dolor libero eos repellendus odit reiciendis?
+        Magnam hic quod iusto illum temporibus pariatur distinctio, in quas
+        dolore voluptates quam aliquam! Voluptatum, recusandae repudiandae
+        exercitationem assumenda provident ad reiciendis officia sit? Ex nostrum
+        fugiat dicta velit ea iusto tenetur, sint iste ipsum maiores est
+        aliquid, nam fugit ad illum neque voluptates provident quasi. Culpa
+        laboriosam dicta odio praesentium. Ab voluptates debitis quibusdam
+        repudiandae asperiores. Reiciendis maiores quibusdam ratione. Eveniet
+        accusamus neque officiis rerum officia.
+      </p>
+    </section>
+
+    <section id="services" class="p-8 bg-[#d7e0de]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!--Sorry I couldn't think of any sevices so I just left them like this I was also running from the deadline so this is just as it -->
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all h-80"
+        >
+          Service 1
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all h-80"
+        >
+          Service 2
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all h-80"
+        >
+          Service 3
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="p-8 bg-[#ece8e6]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all"
+        >
+          <h1><b>Project 1 : ToDo List</b></h1>
+          <img
+            src="Image/vecteezy_checklist-line-inverted-icon_9892446.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all"
+        >
+          <h1><b>Project 2 : React Js </b></h1>
+          <img src="Image/vecteezy_react-js-script_8325250.jpg" alt="" />
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all"
+        >
+          <h1><b>Project 3 : Plant Making</b></h1>
+          <img src="Image/luhj_7h6c_180406.jpg" alt="" />
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all"
+        >
+          <h1><b>Project 4 : Random Password Generator</b></h1>
+          <img src="Image/login.jpg" alt="" />
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all"
+        >
+          <h1><b>Project 5 : Messenger</b></h1>
+          <img
+            src="Image/vecteezy_social-services-vector-icon-design_15814178.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg hover:scale-105 transition-all"
+        >
+          <h1><b>Project 6 : Pdf Merger with React</b></h1>
+          <img
+            src="Image/vecteezy_pdf-file-icon-flat-design-graphic-illustration-vector-pdf_7202237.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="skills"
+      class="p-8 bg-[#bbcef1] flex justify-center items-center"
+    >
+      <div class="max-w-xl w-full">
+        <canvas id="skillsChart"></canvas>
+      </div>
+    </section>
+
+    <section id="certifications" class="p-8 bg-[#78AAA1]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:animate-jiggle">
+          <img src="Image/Certificate1.jpg" alt="Cleaning" />
+          <h2 class="text-[#727274] mx-1 my-1 font-bold">Cleaning The city</h2>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:animate-jiggle">
+          <img src="Image/certificate2.jpg" alt="Team Leading" />
+          <h2 class="text-[#727274] mx-1 my-1 font-bold">
+            Being the Team lead for Teachers Day
+          </h2>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:animate-jiggle">
+          <img src="Image/certificate3.jpg" alt="Blood donation" />
+          <h2 class="text-[#727274] mx-1 my-1 font-bold">
+            Donation of blood in college
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="p-8 bg-[#B8C5B9]">
+      <form class="grid gap-4 max-w-lg mx-auto">
+        <input
+          type="text"
+          placeholder="First Name"
+          class="p-2 border rounded"
+        />
+        <input type="text" placeholder="Last Name" class="p-2 border rounded" />
+        <input
+          type="text"
+          placeholder="Phone Number"
+          class="p-2 border rounded"
+        />
+        <input type="email" placeholder="Email" class="p-2 border rounded" />
+        <textarea
+          placeholder="Introduction"
+          class="p-2 border rounded"
+        ></textarea>
+        <button type="submit" class="bg-[#78AAA1] p-2 rounded">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#dad7d5] p-4 text-center">
+      <p>
+        Contact: <span class="hover:animate-jiggle">Email</span> |
+        <span class="hover:animate-jiggle">Phone</span>
+      </p>
+      <p>&copy; 2024 Anjali Soni</p>
+    </footer>
+
+    <script>
+      // Chart.js for skills section
+      const ctx = document.getElementById("skillsChart").getContext("2d");
+      new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: [
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+            "C++ / C",
+            "Communication",
+            "Team Leading",
+          ],
+          datasets: [
+            {
+              data: [80, 45, 30, 80, 75, 78],
+              backgroundColor: [
+                "#B8C5B9",
+                "#8AA494",
+                "#78AAA1",
+                "#E3CEC7",
+                "#CDB499",
+                "#E3CEC7",
+              ],
+            },
+          ],
+        },
+      });
+    </script>
+
+    <style>
+      @media screen and (max-width: 768px) {
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        nav div {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 425px) {
+        #skillsChart {
+          width: 250px !important;
+          height: 250px !important;
+        }
+
+        section {
+          padding: 4px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        form {
+          padding: 8px;
+        }
+      }
+    </style>
+  </body>
+</html>
